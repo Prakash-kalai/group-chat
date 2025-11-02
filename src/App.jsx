@@ -4,7 +4,7 @@ import WhatsAppChatBox from "./components/ChatBox";
 import { FaPlus } from "react-icons/fa6";
 import { FaKey } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa";
-const SOCKET_URL = "https://chat-server-xzqo.onrender.com";
+const SOCKET_URL =  "https://chat-server-warj.onrender.com" || "http://localhost:4000/";
 
 function App() {
   const [socket, setSocket] = useState(null);
@@ -12,7 +12,7 @@ function App() {
   const [username, setUsername] = useState("");
   const [room, setRoom] = useState("");
   const [joined, setJoined] = useState(false);
-  const [mode, setMode] = useState(null); // "create" or "join"
+  const [mode, setMode] = useState(null); 
 
   useEffect(() => {
     const s = io(SOCKET_URL, { transports: ["websocket"] });
