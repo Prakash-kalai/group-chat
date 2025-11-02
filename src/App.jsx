@@ -4,7 +4,7 @@ import WhatsAppChatBox from "./components/ChatBox";
 import { FaPlus } from "react-icons/fa6";
 import { FaKey } from "react-icons/fa";
 import { FaCloud } from "react-icons/fa";
-const SOCKET_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:4000";
+const SOCKET_URL = "https://chat-server-xzqo.onrender.com";
 
 function App() {
   const [socket, setSocket] = useState(null);

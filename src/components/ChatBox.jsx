@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { MdEdit, MdDelete } from "react-icons/md";
+import { IoMdAdd } from "react-icons/io";
 
 export default function WhatsAppChatBox({ socket, username, room, contact, onLeave }) {
   const [messages, setMessages] = useState([]);
@@ -237,7 +238,7 @@ export default function WhatsAppChatBox({ socket, username, room, contact, onLea
         
         <div className="p-3 border-t">
           <div className="flex items-end gap-3">
-            <button className="p-2 rounded-lg hover:bg-gray-200">➕</button>
+            
             <div className="flex-1">
               <textarea
                 value={input}
